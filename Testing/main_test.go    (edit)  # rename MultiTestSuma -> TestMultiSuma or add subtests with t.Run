@@ -1,0 +1,17 @@
+func TestMultiSuma(t *testing.T) {
+	t.Run("Test case 1", func(t *testing.T) {
+		result := Suma(1, 2)
+		expected := 3
+		if result != expected {
+			t.Errorf("expected %d, got %d", expected, result)
+		}
+	})
+
+	t.Run("Test case 2", func(t *testing.T) {
+		result := Suma(2, 3)
+		expected := 5
+		if result != expected {
+			t.Errorf("expected %d, got %d", expected, result)
+		}
+	})
+}
